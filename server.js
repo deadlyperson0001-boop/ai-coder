@@ -37,6 +37,9 @@ hello();
 
 });
 
-app.listen(3000, () => {
-  console.log("AI server running");
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log("AI server running on port " + PORT);
 });
